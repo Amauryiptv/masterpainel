@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Master IPTV</title>
+    <style>
+        body { font-family: sans-serif; background: #000; color: white; text-align: center; padding: 20px; }
+        input, button { margin: 10px; padding: 10px; border-radius: 5px; border: none; }
+        button { background-color: orange; color: white; cursor: pointer; }
+        textarea { width: 90%; height: 200px; background: #111; color: #0f0; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Master Play - Gerenciador de Canais</h1>
+    <input type="text" id="m3u" placeholder="Cole seu link M3U aqui">
+    <button onclick="mostrar()">Carregar</button>
+    <textarea id="resultado" placeholder="Aqui aparecerá a lista M3U"></textarea>
+
+    <script>
+        function mostrar() {
+            const link = document.getElementById('m3u').value;
+            document.getElementById('resultado').value = "Simulação de carregamento da lista:
+" + link;
+        }
+    </script>
+</body>
+</html>
