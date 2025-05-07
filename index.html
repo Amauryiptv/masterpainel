@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master IPTV - Painel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Master Play Logo" class="logo">
+    <h1>Master IPTV - Painel</h1>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Gerar Cliente</h2>
+      <input type="text" id="clienteNome" placeholder="Nome do Cliente">
+      <button onclick="gerarCliente()">Gerar</button>
+    </div>
+    <div class="card">
+      <h2>Teste Grátis</h2>
+      <input type="text" id="testeNome" placeholder="Nome para Teste">
+      <button onclick="gerarTeste()">Gerar Teste</button>
+    </div>
+    <div class="card">
+      <h2>Criar Revendedor</h2>
+      <input type="text" id="revNome" placeholder="Nome do Revendedor">
+      <button onclick="gerarRevendedor()">Criar</button>
+    </div>
+    <div class="card" id="logArea">
+      <h2>Registros</h2>
+      <ul id="log"></ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
